@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <com.fanggemasend.viewbar.TitleBar
+        android:id="@+id/titler"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="26dp"
+            android:src="@mipmap/user3x" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请输入商家账户"
+            android:background="@null"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="26dp"
+            android:src="@mipmap/lock3x" />
+
+        <EditText
+            android:id="@+id/psw"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入密码"
+            android:background="@null"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/long_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_style"
+        android:text="登录"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/bt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="注册账号立即入住"
+            android:textColor="#007DE1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bt_passwor_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt_register"
+            android:layout_alignBottom="@+id/bt_register"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="忘记密码?"
+            android:textColor="#007DE1"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

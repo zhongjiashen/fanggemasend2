@@ -1,0 +1,16 @@
+<resources >
+    <string name="app_name">方格马(配送版)</string>
+    <string name="set">设置</string>
+    <string name="permission">权限(permission)</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用界面缺少必要权限，无法正常使用。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出当前界面</string>
+
+
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+</resources>

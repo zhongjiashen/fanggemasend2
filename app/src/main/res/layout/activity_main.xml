@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <com.fanggemasend.viewbar.TitleBar
+        android:id="@+id/titler"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/whit_bg"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前位置："
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/user_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textView"
+                    android:text="暂时无法定位"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:id="@+id/user_orderform"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="#007afc"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@mipmap/order" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+
+                            android:text="订单"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/order_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="今日订单（0）"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_account"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="#007afc"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@mipmap/user" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+
+                            android:text="账户"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/account_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="今日已赚（0）"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <LinearLayout
+                    android:id="@+id/user_mine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="#007afc"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:background="@mipmap/mine" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="我的"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/user_minetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="经验值（0）"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_outtimerecord"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="#ff8b02"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@mipmap/outtime" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="超时记录"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/r"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#fff"
+                android:visibility="invisible">
+
+                <Button
+                    android:id="@+id/bt_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/button_style"
+                    android:text="确认送达"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

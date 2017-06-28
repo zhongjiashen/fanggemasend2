@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fanggema.fanggemasend">
+
+    <!-- iBeancon功能所需权限 -->;
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- iBeancon功能所需权限 -->;
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--地图包、搜索包需要的基础权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--//定位包、导航包需要的额外权限（注：基础权限也需要）-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--添加可以向外拨打电话的权限  -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:name="com.fanggemasend.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/apptu"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/apptu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <activity android:name="com.fanggemasend.view.activity.AppStartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fanggemasend.view.activity.AccountActivity" />
+        <activity android:name="com.fanggemasend.view.activity.DeliveryActivity" />
+        <activity android:name="com.fanggemasend.view.activity.TakeDeliveryActivity" />
+        <activity android:name="com.fanggemasend.view.activity.GuideActivity" />
+        <activity android:name="com.fanggemasend.view.activity.GatheringInformationSetActivity" />
+        <activity android:name="com.fanggemasend.view.activity.LoginActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.fanggemasend.view.activity.MainActivity" />
+        <activity android:name="com.fanggemasend.view.activity.MyActivity" />
+        <activity android:name="com.fanggemasend.view.activity.OrderActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.fanggemasend.view.activity.OrderDetailsActivity" />
+        <activity android:name="com.fanggemasend.view.activity.OvertimeRecordsActivity" />
+        <activity android:name="com.fanggemasend.view.activity.RegisterActivity" />
+        <activity android:name="com.fanggemasend.view.activity.RealNameAuthenticationActivity" />
+        <activity android:name="com.fanggemasend.view.activity.RealNameAuthenticationStateActivity" />
+        <service android:name="com.fanggemasend.service.DemoIntentService"/>
+        <service
+            android:name="com.fanggemasend.service.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
+
+    </application>
+
+</manifest>

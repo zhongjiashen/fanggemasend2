@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.design.widget.CoordinatorLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+<!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fitsSystemWindows="true"--><!--android:orientation="vertical"--><!--android:background="#efeff4">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <com.fanggemasend.viewbar.TitleBar
+        android:id="@+id/titler"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:text="密码"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/pass_text"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:hint="由6-16位大小写字母及数字组成"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View style="@style/PersonalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:text="确认密码"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/passtwo_text"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:hint="再次输入密码"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View style="@style/PersonalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:text="手机号"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:textColorHint="#515151"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/yzm_bt"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_style"
+            android:text="获取验证码"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View style="@style/PersonalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:text="验证码"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/yzm_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:digits="0123456789"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColorHint="#515151"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View style="@style/PersonalLine" />
+
+    <Button
+        android:id="@+id/register_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_style"
+        android:text="注册"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+</LinearLayout><!--
+            <EditText
+                android:id="@+id/pass_text"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请设置您的密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColorHint="#515151"
+                android:textSize="14sp"/>
+
+            <View style="@style/PersonalLine"/>
+
+            <EditText
+                android:id="@+id/passtwo_text"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColorHint="#515151"
+                android:textSize="14sp"/>
+
+            <View style="@style/PersonalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:textColorHint="#515151"
+                    android:textSize="14sp"/>
+
+                <Button
+                    android:id="@+id/yzm_bt"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_style"
+                    android:text="获取验证码"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <View style="@style/PersonalLine"/>
+
+            <EditText
+                android:id="@+id/yzm_text"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@null"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:hint="请输入验证码"
+                android:maxLength="6"
+                android:inputType="number"
+                android:textColorHint="#515151"
+                android:textSize="14sp"/>
+
+            <View style="@style/PersonalLine"/>
+
+            <Button
+                android:id="@+id/bt_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_style"
+                android:text="注册"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/bt_tiaoguan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/checkbox_style"
+                    android:drawablePadding="2dp"
+                    android:padding="10dp"
+                    android:text="我已阅读并同意"
+                    android:textColor="#515151"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tiaokuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="隐私条款和使用协议"
+                    android:textColor="#007DE1"
+                    android:textSize="12sp"/>
+            </LinearLayout>-->
+
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->

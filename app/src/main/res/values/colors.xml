@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2790EB</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellow">#ff8b02</color>
+    <color name="colorThemebackground">#efeff4</color>
+    <color name="bg_code_after">#2BBE6A</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBtnBack">#007afc</color>
+    <color name="colorTranslation">#00000000</color>
+    <color name="colorWordBackground">#999999</color>
+    <color name="colorHeadBtn">#5fa2d6</color>
+    <color name="colorViewWire">#99939393</color>
+    <color name="colortittletext">#2d2d2d</color>
+    <color name="black">#000000</color>
+    <color name="gray">#aaaaaa</color>
+</resources>

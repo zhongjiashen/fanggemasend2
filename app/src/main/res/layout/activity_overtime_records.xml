@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.fanggemasend.viewbar.TitleBar
+        android:id="@+id/titler"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+    <com.fanggemasend.view.viewpage.pullableview.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/headview" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.fanggemasend.view.viewpage.pullableview.PullableRecyclerView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efeff4"
+            />
+
+        <include layout="@layout/load_more" />
+
+    </com.fanggemasend.view.viewpage.pullableview.PullToRefreshLayout>
+</LinearLayout>

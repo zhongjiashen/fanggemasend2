@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efeff4" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="配送费"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/shipping_fee_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="¥ 0"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efeff4" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="取货地址"
+            android:textColor="#999"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/pickup_information_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三（先生/女士）18336302752"
+                android:textColor="#323232"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/pickup_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup_information_text"
+                android:text="金水区东大街富华大厦1107"
+                android:textColor="#323232"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#efeff4"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="配送信息"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="期望时间"
+            android:textColor="#999"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:text="立即配送"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efeff4" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="配送地址"
+            android:textColor="#999"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/consignee_information_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三（先生/女士）18336302752"
+                android:textColor="#323232"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/consignee_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/consignee_information_text"
+                android:text="金水区东大街富华大厦1107"
+                android:textColor="#323232"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efeff4" />
+    <Button
+        android:id="@+id/rob_order_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_style"
+        android:text="抢单"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+</LinearLayout>

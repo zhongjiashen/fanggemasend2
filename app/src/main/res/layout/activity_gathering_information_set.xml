@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_style"
+            android:text="提交信息"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.fanggemasend.viewbar.TitleBar
+            android:id="@+id/titler"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="开户人姓名"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/name_et"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:gravity="center|right"
+                android:hint="请输入开户人姓名"
+                android:textSize="14sp" />
+
+            <View
+                style="@style/PersonalLine"
+                android:layout_below="@id/name_et" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/name_et"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="银行卡号"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/yhkh_et"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/name_et"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:digits="0123456789"
+                android:gravity="center|right"
+                android:hint="请输入银行卡号"
+                android:textSize="14sp" />
+
+            <View
+                style="@style/PersonalLine"
+                android:layout_below="@id/yhkh_et" />
+            <RelativeLayout
+                android:id="@+id/khh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yhkh_et">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center|left"
+                    android:text="开户行"
+                    android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:drawableRight="@mipmap/icon_more_3x"
+                android:drawablePadding="5dp"
+                android:gravity="center|right"
+                android:text="请选择开户银行"
+                android:textSize="14sp" />
+            </RelativeLayout>
+            <View
+                style="@style/PersonalLine"
+                android:layout_below="@id/yhkh_et" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#ffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="支付宝姓名"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zfbname_et"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:gravity="center|right"
+                android:hint="请输入开户人姓名"
+                android:textSize="14sp" />
+
+            <View
+                style="@style/PersonalLine"
+                android:layout_below="@id/zfbname_et" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/zfbname_et"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="支付宝账号"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zfbzh_et"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/zfbname_et"
+                android:layout_marginRight="16dp"
+
+                android:background="@null"
+                android:gravity="center|right"
+                android:hint="请输入支付宝账号"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

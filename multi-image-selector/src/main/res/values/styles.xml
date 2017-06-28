@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MIS_NO_ACTIONBAR" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2790EB</item>
+        <item name="colorPrimaryDark">#2790EB</item>
+        <item name="colorAccent">#2790EB</item>
+    </style>
+    <style name="NoTitleAppTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.fanggemasend.viewbar.TitleBar
+        android:id="@+id/titler"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/aduiting" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="正在审核"
+            android:layout_below="@id/imageView1"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="#1081FE"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</LinearLayout>
